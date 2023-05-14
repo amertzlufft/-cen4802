@@ -1,0 +1,30 @@
+/**
+ * Finds the nth (10th for assignemt) term in the Fibonacci sequence recursively.
+ * @param n is the index of the term to calculate can not be negative 
+ * @return the value of the nth term in the Fibonacci sequence
+ * @throws IllegalArgumentException if n is negative
+ * @author Ana Mertzlufft
+ */
+ package Fibonacci;
+
+public class fibonacci {
+	
+
+	 
+	    public static int fibonacci(int n) {
+	        if (n <= 1) {
+	            return n;
+	        } else {
+	            return fibonacci(n - 1) + fibonacci(n - 2);
+	        }
+	    }
+
+	 
+	    public static void main(String[] args) {
+	        int n = 10;
+	        int fib = fibonacci(n);
+	        System.out.println("The " + n + "th term of the Fibonacci sequence is " + fib + ".");
+	    }
+	}
+
+
